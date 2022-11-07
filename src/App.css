@@ -1,10 +1,11 @@
 .App {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #292e5a;
-  background-color: #f3f4ff;
+  background-color: #d2d3df;
 }
 
 .generator {
@@ -87,3 +88,17 @@
 .generator__form-actions .copy-btn {
   background: linear-gradient(to right, #62f498, #77f4eb);
 }
+
+.credit{
+margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+}
+.credit a{
+  text-decoration: none;
+  color: rgb(95, 79, 79);
+}
+.generator__length-title{
+  padding: 9px 0px;
+}
+

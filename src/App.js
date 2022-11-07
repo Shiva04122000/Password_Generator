@@ -32,19 +32,27 @@ function App() {
 
     if (counter > 6) {
       setCounter((prevCounter) => prevCounter - 1);
+    }else{
+      alert("Password Can't be less than 6 digits")
     }
   };
 
   const generatePassword = (e) => {
     e.preventDefault();
 
-    let _password = "";
+    if(isUppercase || isLowercase || isNumber||isSymbol){
+      let _password = "";
 
     for (let i = 0; i < counter; i++) {
       _password += getRandom();
     }
 
     setPassword(_password);
+    }else{
+      alert(" Please Select any Case to Generate Password")
+    }
+
+    
   };
 
   const getRandom = () => {
@@ -187,7 +195,9 @@ function App() {
           </div>
         </form>
       </div>
+      <h1 className='credit'>Made by <a href="https://www.linkedin.com/in/shiva-epili-2370b4226/">Shiva Epili</a> with ❤️ </h1>
     </div>
+    
   );
 }
 
